@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.receipt {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.header {
+    text-align: center;
+}
+.items {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.total {
+    margin-top: 10px;
+    text-align: right;
+}
+.container {
+    display: flex;
+    background-color: #ebebeb;
+    margin-top: 10%;
+}
+
+.half-width {
+    flex: 1;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.bg-white {
+    background-color: white;
+}
