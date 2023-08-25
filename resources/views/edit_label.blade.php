@@ -29,13 +29,8 @@
         <div class="half-width bg-white">
             <form action="{{ route('generate-receipt') }}" method="post">
                 @csrf
-                <label for="sku">SKU:</label>
-                <input type="text" name="sku" id="sku" required>
-                </br>
                 <label for="delivery_instruction">Delivery Instruction:</label>
-                <input type="text" name="delivery_instruction" id="delivery_instruction" required>
-                </br>
-                <button type="submit">Download PDF</button>
+                
             </form>
         </div>
     </div>
@@ -56,5 +51,6 @@
             
         });
     </script>
+    <script src="{{ asset('js/pdf_editor_script.js') }}"></script>
 </body>
 </html>
