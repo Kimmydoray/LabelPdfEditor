@@ -12,7 +12,10 @@
     <canvas id="pdf-canvas" width="800" height="600"></canvas>
     <input type="text" id="text-input" placeholder="Enter text">
     </br>
-    <button type="submit" id="download-pdf-button">Download PDF</button>
+    <form action="{{ route('generate-receipt') }}" method="post">
+        @csrf
+        <button type="submit" id="download-pdf-button">Download PDF</button>
+    </form>
     <script src="{{ asset('js/pdf_editor_script.js') }}"></script>
     
 </body>
